@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab packages </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("labbackground.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 90%;
+            background: linear-gradient(to bottom, #ffffff,#4483e2);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .package {
+            padding: 15px;
+            margin: 10px 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .package:hover {
+            background: linear-gradient(135deg, #ff6b6b, #ff3e3e);
+        }
+        .package-content {
+            display: none;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .explore-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .explore-btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i>Lab Packages</i></h1>
+        
+        <div class="package" onclick="toggleDetails('basic')">Basic Health Checkup Package</div>
+        <div id="basic" class="package-content">
+            <ul>
+                <li>Complete Blood Count (CBC)</li>
+                <li>Blood Sugar (Fasting)</li>
+                <li>Lipid Profile</li>
+                <li>Kidney Function Test</li>
+                <li>Liver Function Test</li>
+                <li><b>Best For:</b> Routine health monitoring</li>
+                <li><b>Price:</b> $30 - $50</li>
+            </ul>
+            <button class="explore-btn" onclick="window.location.href='LABPACKAGE/basiclab.html'">Explore More</button>
+        </div>
+
+        <div class="package" onclick="toggleDetails('advanced')">Advanced Health Checkup Package</div>
+        <div id="advanced" class="package-content">
+            <ul>
+                <li>Includes all tests from Basic Package</li>
+                <li>Thyroid Profile (TSH, T3, T4)</li>
+                <li>Vitamin D & B12 Levels</li>
+                <li>ECG & Chest X-Ray</li>
+                <li><b>Best For:</b> People over 40</li>
+                <li><b>Price:</b> $60 - $100</li>
+            </ul>
+            <button class="explore-btn" onclick="window.location.href='LABPACKAGE/advancedlab.html'">Explore More</button>
+        </div>
+
+        <div class="package" onclick="toggleDetails('fullbody')">Full Body Checkup Package</div>
+        <div id="fullbody" class="package-content">
+            <ul>
+                <li>Includes all tests from Advanced Package</li>
+                <li>Hormone Panel</li>
+                <li>Cancer Marker Tests</li>
+                <li>Ultrasound Abdomen</li>
+                <li><b>Best For:</b> Comprehensive health assessment</li>
+                <li><b>Price:</b> $100 - $200</li>
+            </ul>
+            <button class="explore-btn" onclick="window.location.href='LABPACKAGE/Fullbody_Checkup.html'">Explore More</button>
+        </div>
+
+        <div class="package" onclick="toggleDetails('diabetes')">Diabetes Package</div>
+        <div id="diabetes" class="package-content">
+            <ul>
+                <li>Fasting Blood Sugar (FBS)</li>
+                <li>Postprandial Blood Sugar (PPBS)</li>
+                <li>HbA1c</li>
+                <li>Kidney Function Test</li>
+                <li><b>Best For:</b> Diabetes patients</li>
+                <li><b>Price:</b> $40 - $70</li>
+            </ul>
+            <button class="explore-btn" onclick="window.location.href='LABPACKAGE/Diabetes.html'">Explore More</button>
+        </div>
+
+        <div class="package" onclick="toggleDetails('heart')">Heart Care Package</div>
+        <div id="heart" class="package-content">
+            <ul>
+                <li>Lipid Profile</li>
+                <li>ECG & 2D Echo</li>
+                <li>Cardiac Enzymes Test</li>
+                <li>Blood Pressure Monitoring</li>
+                <li><b>Best For:</b> Heart patients</li>
+                <li><b>Price:</b> $80 - $150</li>
+            </ul>
+            <button class="explore-btn" onclick="window.location.href='LABPACKAGE/Heart_Checkup.html'">Explore More</button>
+        </div>
+
+        <div class="package" onclick="toggleDetails('women')">Women's Health Package</div>
+        <div id="women" class="package-content">
+            <ul>
+                <li>Hormone Profile (Estrogen, Progesterone, FSH, LH)</li>
+                <li>Thyroid Function Test</li>
+                <li>Bone Density Test (Calcium, Vitamin D Levels)</li>
+                <li>Pap Smear & Mammogram</li>
+                <li>Iron Deficiency & Anemia Tests</li>
+                <li><b>Best For:</b> Women's overall health assessment</li>
+                <li><b>Price:</b> $70 - $120</li>
+            </ul>
+            <button class="explore-btn" onclick="window.location.href='LABPACKAGE/Women_checkup.html'">Explore More</button>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            let content = document.getElementById(id);
+            let allContent = document.querySelectorAll('.package-content');
+            
+            allContent.forEach(item => {
+                if (item !== content) {
+                    item.style.display = 'none';
+                }
+            });
+
+            content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

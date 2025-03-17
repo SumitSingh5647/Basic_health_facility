@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('loginimg.jpg') no-repeat center center/cover;
+            background-size: cover;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.85); /* Slightly transparent white */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 300px;
+            position: relative;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-container {
+            position: relative;
+            width: 100%;
+            margin: 10px 0;
+            border-radius:5px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .login-container input[type="submit"] {
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <input type="email" placeholder="Enter Email" name="email" required>
+
+            <!-- Password Field with Toggle -->
+            <div class="input-container">
+                <input type="password" id="password" placeholder="Enter Password" name="password" required>
+                <button type="button" class="toggle-password" onclick="togglePassword('password')">👁</button>
+            </div>
+
+            <input type="submit" value="Login">
+        </form>
+        <a href="Forget_Password.html" class="forgot-password">Forgot Password?</a>
+    </div>
+
+    <script>
+        function togglePassword(fieldId) {
+            const passwordField = document.getElementById(fieldId);
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+
+</body>
+</html>

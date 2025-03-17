@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Service</title>
+    <link rel="stylesheet" href="service.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+   
+    <!-- Header with Profile Picture -->
+    <div class="container">
+     <!--Sidebar with Profile Picture-->
+     <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_eBcIOMDRFmD_ZRQ1Q0mMLTmLltrgWhUqQ&s" alt="User Profile" class="profile-pic" id="profileBtn">
+        <h1 class="title"><i>Choose Service</i></h1><hr>
+     </div>
+
+     <!--Service Card-->
+     <div class="service-container">
+        <div class="service-card" onclick="window.location.href='CANCERCARE/cancer.html'">
+            <img src="cancer.jpg" alt="Cancer Care">
+            <h3>Cancer Care</h3>
+        </div>
+        <div class="service-card" onclick="window.location.href='DENTALCARE/dental.html'">
+            <img src="dental.jpg" alt="Dental Treatment">
+            <h3>Dental Treatment</h3>
+        </div>
+        <div class="service-card" onclick="window.location.href='EYECARE/eye.html'">
+            <img src="eye.jpg" alt="Eye Treatment">
+            <h3>Eye Treatment</h3>
+        </div>
+        <div class="service-card" onclick="window.location.href='BONESCARE/bone.html'">
+            <img src="bones and joint.jpg" alt="Bones & Joints Treatment">
+            <h3>Bones & Joints Treatment</h3>
+        </div>
+        <div class="service-card" onclick="window.location.href='MENTALCARE/mental.html'">
+            <img src="mentalhealth.jpg" alt="Mental Health">
+            <h3>Mental Health</h3>
+        </div>
+        <div class="service-card" onclick="window.location.href='KIDNEYCARE/kidney.html'">
+            <img src="kidney treatment.jpg" alt="Kidney Treatment">
+            <h3>Kidney Treatment</h3>
+        </div>
+        <div class="service-card" onclick="window.location.href='HEARTCARE/heart.html'">
+            <img src="heart treatment.jpg" alt="Heart Treatment">
+            <h3>Heart Treatment</h3>
+        </div>
+        <div class="service-card" onclick="window.location.href='HAIRCARE/hair.html'">
+            <img src="hairtreatment.jpg" alt="Hair Treatment">
+            <h3>Hair Treatment</h3>
+        </div>
+      </div>
+    </div>
+    <!--Browse more button-->
+    <a href="#" class="browse-btn">Browse for More</a>
+
+ <!-- User Dashboard Popup (Hidden by Default) -->
+ <div id="userDashboard" class="dashboard-popup">
+    <div class="dashboard-content">
+        <span class="close-btn">&times;</span>
+        <h2>User Dashboard</h2>
+        <ul>
+            <li><a href="front.HTML">Home</a></li>
+            <li><a href="LOGIN/login.html" class="logout">Logout</a></li>
+        </ul>
+    </div>
+</div>
+<script src="services.js"></script>
+    
+
+</body>
+</html>

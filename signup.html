@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #ff9966, #ff5e62);
+    }
+
+    .signup-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 320px;
+      position: relative;
+    }
+
+    .signup-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .signup-container .input-container {
+      position: relative;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .signup-container input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 15px; /* Added spacing */
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .signup-container input[type="submit"] {
+      background: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .signup-container input[type="submit"]:hover {
+      background: #218838;
+    }
+
+    .login-link {
+      display: block;
+      margin-top: 15px;
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form action="/signup" method="POST">
+      <input type="text" placeholder="Enter Name" name="name" required>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <!-- Password Field with Toggle -->
+      <div class="input-container">
+        <input type="password" id="password" placeholder="Enter Password" name="password" required>
+        <button type="button" class="toggle-password" onclick="togglePassword('password')">👁</button>
+      </div>
+
+      <!-- Confirm Password Field with Toggle -->
+      <div class="input-container">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" name="c_password" required>
+        <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword')">👁</button>
+      </div>
+
+      <input type="submit" value="Register">
+    </form>
+    <a href="/login" class="login-link">Already have an account? Login</a>
+  </div>
+
+  <script>
+    function togglePassword(fieldId) {
+      const passwordField = document.getElementById(fieldId);
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+      } else {
+        passwordField.type = "password";
+      }
+    }
+  </script>
+
+</body>
+</html>

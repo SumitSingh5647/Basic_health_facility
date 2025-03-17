@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Dashboard</title>
+    <link rel="stylesheet" href="Front.css">
+    <style>
+        /* Logout Button Styling */
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #d9534f;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .logout-btn:hover {
+            background: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <a href="login.html"><button class="logout-btn">Logout</button></a> <!-- Logout Button -->
+
+    <div class="container">
+        <h1>Welcome to Healthcare</h1>
+        <div class="card-container">
+            <div class="card">
+                <h2><i>Treatment Packages</i></h2><br>
+                <p>Explore a variety of treatment packages to suit your health needs.</p><br>
+                <a href="services.html" class="learn-more">Learn more</a>
+            </div>
+            <div class="card">
+                <h2><i>Lab Package Comparison</i></h2><br>
+                <p>Compare lab packages to choose the best options for your tests.</p><br>
+                <a href="lab.html" class="learn-more">Learn more</a>
+            </div>
+            <div class="card">
+                <h2><i>Pregnancy Checkup</i></h2><br>
+                <p>Find access to regular healthcare checkup requirements.</p><br>
+                <a href="pregnancy.html" class="learn-more">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = "logout.html"; // Redirect to Logout Page
+        }
+    </script>
+</body>
+</html>

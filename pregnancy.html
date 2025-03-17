@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Pregnancy Checkup</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://dtnext-prod.s3.ap-south-1.amazonaws.com/imported/import/Articles/2021/Oct/202110251655348104_Is-pregnancy-related-low-back-pain-sciatica_SECVPF.gif') no-repeat center center/cover;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .checkup {
+            padding: 15px;
+            margin: 10px 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .checkup:hover {
+            background: linear-gradient(135deg, #ff6b6b, #ff3e3e);
+        }
+        .details {
+            display: none;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .explore-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #ff9800;
+            color: white;
+            border-radius: 6px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .explore-btn:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Regular Pregnancy Checkup</h1>
+        
+        <div class="checkup" onclick="toggleDetails('first_trimester')">First Trimester (Weeks 1-12)</div>
+        <div id="first_trimester" class="details">
+            <ul>
+                <li>✅ Blood Tests (Hemoglobin, Blood Sugar, Blood Group, HIV, Hepatitis B, Syphilis)</li>
+                <li>✅ Urine Test (Infections, Protein Levels)</li>
+                <li>✅ Ultrasound Scan (Confirm Pregnancy & Detect Heartbeat)</li>
+                <li>✅ Folic Acid & Vitamin Supplements</li>
+                <li>✅ Lifestyle & Dietary Guidance</li>
+            </ul>
+            <a href="PREGNANCYCHECKUP/first_Trimester.html" class="explore-btn">Explore More</a>
+        </div>
+
+        <div class="checkup" onclick="toggleDetails('second_trimester')">Second Trimester (Weeks 13-27)</div>
+        <div id="second_trimester" class="details">
+            <ul>
+                <li>✅ Anomaly Scan (Detect Baby’s Growth & Development)</li>
+                <li>✅ Blood Sugar Test (Gestational Diabetes Screening)</li>
+                <li>✅ Iron & Calcium Supplements</li>
+                <li>✅ Fetal Movement Monitoring</li>
+                <li>✅ Rh Factor & Antibody Screening (if applicable)</li>
+            </ul>
+            <a href="PREGNANCYCHECKUP/Second_Trimester.html" class="explore-btn">Explore More</a>
+        </div>
+
+        <div class="checkup" onclick="toggleDetails('third_trimester')">Third Trimester (Weeks 28-40)</div>
+        <div id="third_trimester" class="details">
+            <ul>
+                <li>✅ Growth Scan (Assess Baby’s Position & Weight)</li>
+                <li>✅ Non-Stress Test (NST) for Baby’s Heart Rate</li>
+                <li>✅ Blood Pressure & Urine Tests (Check for Preeclampsia)</li>
+                <li>✅ Pelvic Exam (Check for Labor Signs)</li>
+                <li>✅ Birth Plan Discussion</li>
+            </ul>
+            <a href="PREGNANCYCHECKUP/Third_Trimester.html" class="explore-btn">Explore More</a>
+        </div>
+
+        <div class="checkup" onclick="toggleDetails('postnatal')">Postnatal Checkup (After Delivery)</div>
+        <div id="postnatal" class="details">
+            <ul>
+                <li>✅ Mother’s Recovery Checkup</li>
+                <li>✅ Breastfeeding Support & Guidance</li>
+                <li>✅ Baby’s First Vaccination Schedule</li>
+                <li>✅ Mental Health & Postpartum Depression Screening</li>
+                <li>✅ Diet & Exercise Recommendations</li>
+            </ul>
+            <a href="PREGNANCYCHECKUP/Postanal_Checkup.html" class="explore-btn">Explore More</a>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            let content = document.getElementById(id);
+            let allContent = document.querySelectorAll('.details');
+            
+            allContent.forEach(item => {
+                if (item !== content) {
+                    item.style.display = 'none';
+                }
+            });
+
+            content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
