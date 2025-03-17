@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Transplant - Hospital Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #007bff;
+        }
+        .price {
+            font-size: 18px;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hair Transplant - Hospital Listings</h1>
+
+        <div class="grid">
+            <!-- Pune Hospitals -->
+            <div class="card">
+                <h2>Pune - Hair MD</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹50,000</p>
+                <button onclick="bookAppointment('https://www.hairmdindia.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - Kaya Clinic</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹60,000</p>
+                <button onclick="bookAppointment('https://www.kayaskinclinic.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - VLCC Wellness</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹55,000</p>
+                <button onclick="bookAppointment('https://www.vlccwellness.com/')">Book Now</button>
+            </div>
+
+            <!-- Indore Hospitals -->
+            <div class="card">
+                <h2>Indore - RichFeel Clinic</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹52,000</p>
+                <button onclick="bookAppointment('https://www.richfeel.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - DermaPlus</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹58,000</p>
+                <button onclick="bookAppointment('https://www.dermaplusclinic.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - Kaya Skin Clinic</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹62,000</p>
+                <button onclick="bookAppointment('https://www.kayaskinclinic.com/')">Book Now</button>
+            </div>
+
+            <!-- Mumbai Hospitals -->
+            <div class="card">
+                <h2>Mumbai - Dr. Batra's</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹55,000</p>
+                <button onclick="bookAppointment('https://www.drbatras.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - VLCC Wellness</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹65,000</p>
+                <button onclick="bookAppointment('https://www.vlccwellness.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - RichFeel Clinic</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹70,000</p>
+                <button onclick="bookAppointment('https://www.richfeel.com/')">Book Now</button>
+            </div>
+
+            <!-- Bhopal Hospitals -->
+            <div class="card">
+                <h2>Bhopal - Hair Science</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹48,000</p>
+                <button onclick="bookAppointment('https://www.hairscience.in/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - Kaya Clinic</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹56,000</p>
+                <button onclick="bookAppointment('https://www.kayaskinclinic.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - DermaPlus</h2>
+                <p>Hair Transplant Treatment</p>
+                <p class="price">₹60,000</p>
+                <button onclick="bookAppointment('https://www.dermaplusclinic.com/')">Book Now</button>
+            </div>
+        </div>
+
+        <h1>Hair Transplant Price Comparison</h1>
+        <table>
+            <tr>
+                <th>City</th>
+                <th>Hospital</th>
+            
+                <th>Price</th>
+                <th>Book</th>
+            </tr>
+            <tr><td>Pune</td><td>Hair MD</td><td>₹50,000</td><td><button>Book</button></td></tr>
+            <tr><td>Pune</td><td>Kaya Clinic</td><td>₹60,000</td><td><button>Book</button></td></tr>
+            <tr><td>Pune</td><td>VLCC Wellness</td><td>₹55,000</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>RichFeel Clinic</td><td>₹52,000</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>DermaPlus</td><td>₹58,000</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>Kaya Skin Clinic</td><td>₹62,000</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Dr. Batra's</td><td>₹55,000</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>VLCC Wellness</td><td>₹65,000</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>RichFeel Clinic</td><td>₹70,000</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>Hair Science</td><td>₹48,000</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>kayaClinic</td><td>₹56,000</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>DermaPlus</td><td>₹60,000</td><td><button>Book</button></td></tr>
+        </table>
+    </div>
+
+    <script>
+        function bookAppointment(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+</html>

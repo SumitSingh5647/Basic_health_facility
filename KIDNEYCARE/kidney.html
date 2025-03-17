@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye-Care - Medcare</title>
+    <link rel="stylesheet" href="kidney.css">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_eBcIOMDRFmD_ZRQ1Q0mMLTmLltrgWhUqQ&s" alt="User Profile" class="profile-pic" id="profileBtn">
+           <h1>Kidney Care</h1>
+        </div>
+    <!-- Cancer Care Services -->
+    <div class="cancer-care-container">
+
+           <!-- Service 1: Dialysis (Hemodialysis & Peritoneal Dialysis) -->
+           <div class="col-md-4">
+            <div class="card">
+                <img src="Dialysis (Hemodialysis & Peritoneal Dialysis).jpeg" class="card-img-top" alt="Dialysis (Hemodialysis & Peritoneal Dialysis)">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Dialysis (Hemodialysis & Peritoneal Dialysis)
+                    </i></h3>
+                    <p class="card-text">Removes waste, extra fluid, and toxins from the blood when kidneys fail.
+                    Hemodialysis: Uses a machine to filter blood outside the body</p>
+                    <a href="/KIDNEYPACKAGE/Dialysis.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Kidney Transplant -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Kidney Transplant.jpeg" class="card-img-top" alt="Kidney Transplant">
+                <div class="card-body">
+                    <h3 class="card-title"><i> Kidney Transplant
+                    </i></h3>
+                    <p class="card-text">Replacement of a damaged kidney with a healthy donor kidney.
+                    Includes pre-transplant evaluation, surgery, and post-transplant care.
+                        </p>
+                        <a href="/KIDNEYPACKAGE/Kidney_Transplant.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: Kidney Stone Treatment -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Kidney Stone Treatment.jpeg" class="card-img-top" alt="Kidney Stone Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i> Kidney Stone Treatment
+                    </i></h3>
+                    <p class="card-text">Lithotripsy: Shock wave therapy to break kidney stones.
+                    Ureteroscopy & Laser Therapy: Minimally invasive procedures to remove stones.
+                        </p>
+                        <a href="/KIDNEYPACKAGE/Stone_Treatment.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 4: Chronic Kidney Disease (CKD) Management -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Chronic Kidney Disease (CKD) Management.jpeg" alt="Chronic Kidney Disease (CKD) Management">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Chronic Kidney Disease (CKD) Management
+                    </i></h3>
+                    <p class="card-text">Slows disease progression with medication, lifestyle changes, and diet plans.
+                    Manages risk factors like diabetes and high blood pressure.
+                        </p>
+                        <a href="/KIDNEYPACKAGE/Chronic_Disease.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 5: Acute Kidney Injury (AKI) Treatment -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Acute Kidney Injury (AKI) Treatment.jpeg" class="card-img-top" alt="Acute Kidney Injury (AKI) Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i> Acute Kidney Injury (AKI) Treatment
+                    </i></h3>
+                    <p class="card-text">Emergency treatment for sudden kidney failure due to infections, dehydration, or toxins.
+                    Includes temporary dialysis or medication to restore kidney function.
+                        </p>
+                        <a href="/KIDNEYPACKAGE/Acute_kidney.htm"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 6: Urinary Tract Infection (UTI) & Nephritis Treatment -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Urinary Tract Infection (UTI) & Nephritis Treatment.jpeg" class="card-img-top" alt="Urinary Tract Infection (UTI) & Nephritis Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i> Urinary Tract Infection (UTI) & Nephritis Treatment
+                    </i></h3>
+                    <p class="card-text">UTI Treatment: Antibiotics and medications to clear kidney infections.
+                     Nephritis Treatment: Management of kidney inflammation caused by autoimmune diseases.</p>
+                     <a href="/KIDNEYPACKAGE/Urinary_Tract.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Browse More Button -->
+        <button class="browse-more-btn">Browse for More</button>
+    </div>
+
+    <!-- User Dashboard Popup -->
+    <div id="userDashboard" class="dashboard-popup">
+        <div class="dashboard-content">
+            <span class="close-btn" onclick="closeDashboard()">&times;</span>
+            <h2>User Dashboard</h2><hr><br>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="index.html" class="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Service Details Popups -->
+    <div id="servicePopup" class="service-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup()">&times;</span>
+        </div>
+    </div>
+
+    <script src="kidney.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keratin Treatment - Hospital Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #007bff;
+        }
+        .price {
+            font-size: 18px;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Keratin Treatment - Hospital Listings</h1>
+
+        <div class="grid">
+            <!-- Pune Hospitals -->
+            <div class="card">
+                <h2>Pune - Kaya Clinic</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹5,000</p>
+                <button onclick="bookAppointment('https://www.kayaclinic.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - VLCC</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹5,500</p>
+                <button onclick="bookAppointment('https://www.vlccwellness.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - Lakmé Salon</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹6,000</p>
+                <button onclick="bookAppointment('https://www.lakmesalon.in/')">Book Now</button>
+            </div>
+
+            <!-- Indore Hospitals -->
+            <div class="card">
+                <h2>Indore - Looks Unisex Salon</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹5,200</p>
+                <button onclick="bookAppointment('https://www.looksunisexsalon.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - Green Trends</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹5,700</p>
+                <button onclick="bookAppointment('https://www.greentrends.in/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - Jawed Habib Salon</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹6,200</p>
+                <button onclick="bookAppointment('https://www.jawedhabib.co.in/')">Book Now</button>
+            </div>
+
+            <!-- Mumbai Hospitals -->
+            <div class="card">
+                <h2>Mumbai - Enrich Salon</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹5,300</p>
+                <button onclick="bookAppointment('https://www.enrichsalon.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - BBlunt Salon</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹5,800</p>
+                <button onclick="bookAppointment('https://www.bblunt.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - Toni & Guy</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹6,500</p>
+                <button onclick="bookAppointment('https://www.toniandguy.com/')">Book Now</button>
+            </div>
+
+            <!-- Bhopal Hospitals -->
+            <div class="card">
+                <h2>Bhopal - Naturals Salon</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹5,100</p>
+                <button onclick="bookAppointment('https://www.naturals.in/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - Geetanjali Salon</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹5,600</p>
+                <button onclick="bookAppointment('https://www.geetanjalisalon.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - Femina Beauty Salon</h2>
+                <p>Keratin Treatment</p>
+                <p class="price">₹6,300</p>
+                <button onclick="bookAppointment('https://www.feminabeautysalon.com/')">Book Now</button>
+            </div>
+        </div>
+
+        <h1>Keratin Treatment Price Comparison</h1>
+        <table>
+            <tr>
+                <th>City</th>
+                <th>Hospital</th>
+                <th>Price</th>
+                <th>Book</th>
+            </tr>
+            <tr><td>Pune</td><td>Kaya Clinic</td><td>₹5,000</td><td><button>Book</button></td></tr>
+            <tr><td>Pune</td><td>VLCC</td><td>₹5,500</td><td><button>Book</button></td></tr>
+            <tr><td>Pune</td><td>lakme salon</td><td>₹6,000</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>Looks Unisex Salon</td><td>₹5,200</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>Green Trends</td><td>₹5,700</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>Jaweb Habib Salon</td><td>₹6,200</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Enrich Salon</td><td>₹5,300</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>BBlunt Salon</td><td>₹5,800</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Toni & Guy</td><td>₹6,500</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>Naturals Salon</td><td>₹5,100</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>Geetanjali Salon</td><td>₹5,600</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>Femina Beauty Salon</td><td>₹6,300</td><td><button>Book</button></td></tr>
+        </table>
+    </div>
+
+    <script>
+        function bookAppointment(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+</html>

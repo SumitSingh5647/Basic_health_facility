@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cataract Surgery - Hospital Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #007bff;
+        }
+        .price {
+            font-size: 18px;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cataract Surgery - Hospital Listings</h1>
+
+        <div class="grid">
+            <!-- Pune Hospitals -->
+            <div class="card">
+                <h2>Pune - Ruby Hall Clinic</h2>
+                <p>Advanced Cataract Surgery with Laser Treatment</p>
+                <p class="price">₹35,000</p>
+                <button onclick="bookAppointment('https://www.rubyhall.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - Sahyadri Hospital</h2>
+                <p>Micro-Incision Cataract Surgery (MICS)</p>
+                <p class="price">₹30,000</p>
+                <button onclick="bookAppointment('https://www.sahyadrihospital.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - Jehangir Hospital</h2>
+                <p>Traditional & Laser Cataract Surgery</p>
+                <p class="price">₹28,000</p>
+                <button onclick="bookAppointment('https://www.jehangirhospital.com/')">Book Now</button>
+            </div>
+
+            <!-- Indore Hospitals -->
+            <div class="card">
+                <h2>Indore - Choithram Hospital</h2>
+                <p>Bladeless Cataract Surgery</p>
+                <p class="price">₹40,000</p>
+                <button onclick="bookAppointment('https://www.choithramhospital.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - Bombay Hospital</h2>
+                <p>Phacoemulsification Cataract Surgery</p>
+                <p class="price">₹32,000</p>
+                <button onclick="bookAppointment('https://www.bombayhospitalindore.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - Vishesh Hospital</h2>
+                <p>Advanced Cataract Surgery</p>
+                <p class="price">₹29,500</p>
+                <button onclick="bookAppointment('https://www.visheshhospital.com/')">Book Now</button>
+            </div>
+
+            <!-- Mumbai Hospitals -->
+            <div class="card">
+                <h2>Mumbai - Wockhardt Hospital</h2>
+                <p>Advanced Cataract Surgery with IOL</p>
+                <p class="price">₹45,000</p>
+                <button onclick="bookAppointment('https://www.wockhardthospitals.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - Hinduja Hospital</h2>
+                <p>Laser Cataract Surgery</p>
+                <p class="price">₹38,000</p>
+                <button onclick="bookAppointment('https://www.hindujahospital.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - Lilavati Hospital</h2>
+                <p>Micro-Incision Cataract Surgery</p>
+                <p class="price">₹34,500</p>
+                <button onclick="bookAppointment('https://www.lilavatihospital.com/')">Book Now</button>
+            </div>
+
+            <!-- Bhopal Hospitals -->
+            <div class="card">
+                <h2>Bhopal - Bansal Hospital</h2>
+                <p>Robotic Cataract Surgery</p>
+                <p class="price">₹42,000</p>
+                <button onclick="bookAppointment('https://www.bansalhospital.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - Noble Hospital</h2>
+                <p>Premium Lens Cataract Surgery</p>
+                <p class="price">₹36,000</p>
+                <button onclick="bookAppointment('https://www.noblehospital.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - AIIMS Bhopal</h2>
+                <p>Affordable Cataract Surgery</p>
+                <p class="price">₹25,000</p>
+                <button onclick="bookAppointment('https://www.aiimsbhopal.edu.in/')">Book Now</button>
+            </div>
+        </div>
+
+        <h1>Cataract Surgery Price Comparison</h1>
+        <table>
+            <tr>
+                <th>City</th>
+                <th>Hospital</th>
+                
+                <th>Price</th>
+                <th>Book</th>
+            </tr><tr><td>Pune</td><td>Ruby Hall Clinic</td><td>₹35,000</td><td><button>Book</button></td></tr>
+            <tr><td>Pune</td><td>Sahyadri Hospital</td><td>₹30,000</td><td><button>Book</button></td></tr>
+            <tr><td>Pune</td><td>Jehangir Hospital</td><td>₹28,000</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>Choithram Hospital</td><td>₹40,000</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>Bombay Hospital</td><td>₹32,000</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>Vishesh Hospital</td><td>₹29,500</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Wockhardt Hospital</td><td>₹45,000</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Hinduja Hospital</td><td>₹38,000</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Lilavati Hospital</td><td>₹34,500</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>Bansal Bhopal</td><td>₹42,000</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>Noble Bhopal</td><td>₹36,000</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>AIIMS Bhopal</td><td>₹25,000</td><td><button>Book</button></td></tr>
+            
+        </table>
+    </div>
+
+    <script>
+        function bookAppointment(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+</html>

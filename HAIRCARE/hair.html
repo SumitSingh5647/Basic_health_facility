@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye-Care - Medcare</title>
+    <link rel="stylesheet" href="hair.css">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_eBcIOMDRFmD_ZRQ1Q0mMLTmLltrgWhUqQ&s" alt="User Profile" class="profile-pic" id="profileBtn">
+           <h1>Hair Care</h1>
+        </div>
+    <!-- Cancer Care Services -->
+    <div class="cancer-care-container">
+
+           <!-- Service 1: Keratin Treatment -->
+           <div class="col-md-4">
+            <div class="card">
+                <img src="Keratin Treatment.jpeg" class="card-img-top" alt="Keratin Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Keratin Treatment</i></h3>
+                    <p class="card-text">A smoothing treatment that reduces frizz and makes hair more manageable.
+                    Adds shine and strengthens hair for a sleek look.
+                    </p>
+                    <a href="/HAIRPACKAGE/Keratin.html"><button class="btn btn-primary">Read More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Hair Spa -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Hair Spa.jpg" class="card-img-top" alt="Hair Spa">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Hair Spa</i></h3>
+                    <p class="card-text">A deep-conditioning treatment to nourish the scalp and hair.
+                    Helps repair damaged hair, control dandruff, and boost hair growth.
+                    </p>
+                    <a href="/HAIRPACKAGE/Hair_Spa.html"><button class="btn btn-primary">Read More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: PRP (Platelet-Rich Plasma) Therapy -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="PRP (Platelet-Rich Plasma) Therapy.jpeg" class="card-img-top" alt="PRP (Platelet-Rich Plasma) Therapy">
+                <div class="card-body">
+                    <h3 class="card-title"><i>PRP (Platelet-Rich Plasma) Therapy
+                    </i></h3>
+                    <p class="card-text">A hair regrowth treatment that uses the patient’s own plasma to stimulate follicles.
+                    Effective for hair thinning and early-stage baldness.
+                    </p>
+                    <a href="/HAIRPACKAGE/Platelet_Rich_Plasma.html"><button class="btn btn-primary">Read More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 4: Hair Botox Treatment -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Hair Botox Treatment.jpeg" alt="Hair Botox Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i> Hair Botox Treatment
+                    </i></h3>
+                    <p class="card-text">A deep-conditioning, chemical-free treatment that restores moisture and shine.
+                    Strengthens hair strands and reduces split ends.
+                    </p>
+                    <a href="/HAIRPACKAGE/Hair_Botox.html"><button class="btn btn-primary">Read More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 5: Scalp Detox & Dandruff Treatment -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Scalp Detox & Dandruff Treatment.jpeg" class="card-img-top" alt="Scalp Detox & Dandruff Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Scalp Detox & Dandruff Treatment
+                    </i></h3>
+                    <p class="card-text">Scalp Detox & Dandruff Treatment
+                    </p>
+                    <a href="/HAIRPACKAGE/Scalp_Dandruff.html"><button class="btn btn-primary">Read More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 6: Hair Transplant -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Hair Transplant.jpeg" class="card-img-top" alt="Hair Transplant">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Hair Transplant
+                    </i></h3>
+                    <p class="card-text">A permanent solution for baldness using techniques like FUE (Follicular Unit Extraction) and FUT (Follicular Unit Transplantation).
+                    </p>
+                    <a href="/HAIRPACKAGE/Hair_Transplant.html"><button class="btn btn-primary">Read More</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Browse More Button -->
+        <button class="browse-more-btn">Browse for More</button>
+    </div>
+
+    <!-- User Dashboard Popup -->
+    <div id="userDashboard" class="dashboard-popup">
+        <div class="dashboard-content">
+            <span class="close-btn" onclick="closeDashboard()">&times;</span>
+            <h2>User Dashboard</h2><hr><br>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="index.html" class="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Service Details Popups -->
+    <div id="servicePopup" class="service-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup()">&times;</span>
+        </div>
+    </div>
+
+    <script src="hair.js"></script>
+</body>
+</html>

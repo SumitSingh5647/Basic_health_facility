@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physiotherapy & Rehabilitation - Hospital Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #007bff;
+        }
+        .price {
+            font-size: 18px;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Physiotherapy & Rehabilitation - Hospital Listings</h1>
+
+        <div class="grid">
+            <!-- Pune Hospitals -->
+            <div class="card">
+                <h2>Pune - Sancheti Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹2,000 per session</p>
+                <button onclick="bookAppointment('https://www.sanchetihospital.org/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - Deenanath Mangeshkar Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹2,500 per session</p>
+                <button onclick="bookAppointment('https://www.dmhospital.org/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - Jehangir Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹2,800 per session</p>
+                <button onclick="bookAppointment('https://www.jehangirhospital.com/')">Book Now</button>
+            </div>
+
+            <!-- Indore Hospitals -->
+            <div class="card">
+                <h2>Indore - Bombay Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹2,500 per session</p>
+                <button onclick="bookAppointment('https://www.bombayhospitalindore.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - CHL Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹2,700 per session</p>
+                <button onclick="bookAppointment('https://www.chlhospitals.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - Apollo Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹3,000 per session</p>
+                <button onclick="bookAppointment('https://www.apollohospitals.com/')">Book Now</button>
+            </div>
+
+            <!-- Mumbai Hospitals -->
+            <div class="card">
+                <h2>Mumbai - Lilavati Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹3,200 per session</p>
+                <button onclick="bookAppointment('https://www.lilavatihospital.com/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - Nanavati Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹3,500 per session</p>
+                <button onclick="bookAppointment('https://www.nanavatihospital.org/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - Kokilaben Dhirubhai Ambani Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹3,600 per session</p>
+                <button onclick="bookAppointment('https://www.kokilabenhospital.com/')">Book Now</button>
+            </div>
+
+            <!-- Bhopal Hospitals -->
+            <div class="card">
+                <h2>Bhopal - Bansal Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹1,800 per session</p>
+                <button onclick="bookAppointment('https://www.bansalhospital.net/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - AIIMS Bhopal</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹2,000 per session</p>
+                <button onclick="bookAppointment('https://www.aiimsbhopal.edu.in/')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - Chirayu Hospital</h2>
+                <p>Physiotherapy & Rehabilitation</p>
+                <p class="price">₹2,200 per session</p>
+                <button onclick="bookAppointment('https://www.chirayuhospital.com/')">Book Now</button>
+            </div>
+        </div>
+
+        <h1>Physiotherapy & Rehabilitation Price Comparison</h1>
+        <table>
+            <tr>
+                <th>City</th>
+                <th>Hospital</th>
+                <th>Price</th>
+                <th>Book</th>
+            </tr>
+            <tr><td>Pune</td><td>Sancheti Hospital</td><td>₹2,000</td><td><button>Book</button></td></tr>
+            <tr><td>Pune</td><td>Deenanath Mangeshkar Hospital</td><td>₹2,500</td><td><button>Book</button></td></tr>
+            <tr><td>Pune</td><td>Jehangir Hospital</td><td>₹2,800</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>Bombay Hospital</td><td>₹2,500</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>CHL Hospital</td><td>₹2,700</td><td><button>Book</button></td></tr>
+            <tr><td>Indore</td><td>Apollo Hospital</td><td>₹3,000</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Lilavati Hospital</td><td>₹3,200</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Nanavati Hospital</td><td>₹3,500</td><td><button>Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Kokilaben Dhirubai Ambani Hospital</td><td>₹3,600</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>Bansal Hospital</td><td>₹1,800</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>AIIMS Bhopal Hospital</td><td>₹2,000</td><td><button>Book</button></td></tr>
+            <tr><td>Bhopal</td><td>Chirayu Hospital</td><td>₹2,200</td><td><button>Book</button></td></tr>
+        </table>
+    </div>
+
+    <script>
+        function bookAppointment(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+</html>

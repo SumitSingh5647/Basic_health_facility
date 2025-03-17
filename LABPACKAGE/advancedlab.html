@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Health Checkup Centers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #c0bdbe, #ad8c8c);
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: inline-block;
+            width: 30%;
+        }
+        .card h2 {
+            color: #007bff;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #28a745;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #007bff;
+            color: white;
+        }
+        tr:nth-child(odd) {
+            background-color: #faf7f7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1><u>Health Care Checkup Centers</u></h1>
+
+    <div class="card">
+        <h2>Bansal Hospital</h2>
+        <p>City: Bhopal</p>
+        <p>Advanced Health Checkup</p>
+        <p class="price">₹4,200</p>
+        <button onclick="window.location.href='https://www.bansalhospital.com/'">Book Now</button>
+    </div>
+
+    <div class="card">
+        <h2>CHL Hospital</h2>
+        <p>City: Indore</p>
+        <p>Comprehensive Health Checkup</p>
+        <p class="price">₹3,999</p>
+        <button onclick="window.location.href='https://www.chlhospitals.com/'">Book Now</button>
+    </div>
+
+    <div class="card">
+        <h2>Fortis Hospital</h2>
+        <p>City: Delhi</p>
+        <p>Full Body Checkup</p>
+        <p class="price">₹5,500</p>
+        <button onclick="window.location.href='https://www.fortishealthcare.com/india/health-checkup'">Book Now</button>
+    </div>
+
+    <div class="card">
+        <h2>Ruby Hall Clinic</h2>
+        <p>City: Pune</p>
+        <p>Complete Health Checkup</p>
+        <p class="price">₹4,750</p>
+        <button onclick="window.location.href='https://rubyhall.com/health-checkup'">Book Now</button>
+    </div>
+
+    <div class="card">
+        <h2>Hinduja Hospital</h2>
+        <p>City: Mumbai</p>
+        <p>Premium Health Checkup</p>
+        <p class="price">₹6,000</p>
+        <button onclick="window.location.href='https://www.hindujahospital.com/health-checkup/'">Book Now</button>
+    </div>
+
+    <h1>Price Comparison</h1>
+    <table>
+        <tr>
+            <th>Hospital Name</th>
+            <th>City</th>
+            <th>Package Name</th>
+            <th>Price (₹)</th>
+            <th>Booking Link</th>
+        </tr>
+        <tr>
+            <td>Bansal Hospital</td>
+            <td>Bhopal</td>
+            <td>Advanced Health Checkup</td>
+            <td>₹4,200</td>
+            <td><button onclick="bookAppointment('https://www.bansalhospital.com/')">Book</button></td>
+        </tr>
+        <tr>
+            <td>CHL Hospital</td>
+            <td>Indore</td>
+            <td>Comprehensive Health Checkup</td>
+            <td>₹3,999</td>
+            <td><button onclick="bookAppointment('https://www.chlhospitals.com/')">Book</button></td>
+        </tr>
+        <tr>
+            <td>Fortis Hospital</td>
+            <td>Delhi</td>
+            <td>Advanced Body Checkup</td>
+            <td>₹5,500</td>
+            <td><button onclick="bookAppointment('https://rubyhall.com/health-checkup')">Book</button></td>
+        </tr>
+        <tr>
+            <td>Ruby Hall Clinic</td>
+            <td>Pune</td>
+            <td>Complete Health Checkup</td>
+            <td>₹4,750</td>
+            <td><button onclick="bookAppointment('https://www.hindujahospital.com/health-checkup/')">Book</button></td>
+        </tr>
+        <tr>
+            <td>Hinduja Hospital</td>
+            <td>Mumbai</td>
+            <td>Premium Health Checkup</td>
+            <td>₹6,000</td>
+            <td><button onclick="bookAppointment('https://www.hindujahospital.com/health-checkup/')">Book</button></td>
+        </tr>
+    </table>
+</div>
+<script>
+    function bookAppointment(url) {
+        window.open(url, "_blank");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Checkup Centers & Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #86a6c5,#d3cad3);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #007bff;
+        }
+        .card p {
+            color: #555;
+        }
+        .price {
+            font-size: 18px;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #faf7f7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><i><u>Basic Health Care Checkup Centers</u></i></h1>
+
+        <!-- Indore -->
+        <div class="card">
+            <h2>Indore - CARE CHL Hospitals</h2>
+            <p>Includes Cancer Screening, Brain/Headache Health Checkup, Senior Health Checkup.</p>
+            <p class="price">₹2,999</p>
+            <button onclick="bookAppointment('https://www.carehospitals.com/indore/health-package')">Book Now</button>
+        </div>
+
+        <!-- Mumbai -->
+        <div class="card">
+            <h2>Mumbai - Wockhardt Hospitals</h2>
+            <p>Executive Package Female, Basic Health Checkup, Cardiac Health Checkup.</p>
+            <p class="price">₹3,120</p>
+            <button onclick="bookAppointment('https://www.wockhardthospitals.com/mumbai/health-package/')">Book Now</button>
+        </div>
+
+        <!-- Pune -->
+        <div class="card">
+            <h2>Pune - NM Medical</h2>
+            <p>Comprehensive full body health checkup with advanced diagnostics.</p>
+            <p class="price">₹2,500</p>
+            <button onclick="bookAppointment('https://www.nmmedical.com/index.php')">Book Now</button>
+        </div>
+
+        <!-- Bhopal -->
+        <div class="card">
+            <h2>Bhopal - Indus Health Plus</h2>
+            <p>SWASTH FIT packages for preventive health checkups.</p>
+            <p class="price">₹2,199</p>
+            <button onclick="bookAppointment('https://www.indushealthplus.com/health-checkup-packages.html')">Book Now</button>
+        </div>
+
+        <!-- Delhi -->
+        <div class="card">
+            <h2>Delhi - Dr Lal PathLabs</h2>
+            <p>Full body checkup including 69 tests such as Vitamin D, Thyroid, Lipid Profile.</p>
+            <p class="price">₹1,999</p>
+            <button onclick="bookAppointment('https://www.lalpathlabs.com/swasth-fit-packages-full-body-checkups')">Book Now</button>
+        </div>
+
+        <h1>Comparison of Health Checkup Packages</h1>
+        <table>
+            <tr>
+                <th>City</th>
+                <th>Center Name</th>
+                <th>Package</th>
+                <th>Price</th>
+                <th>Booking Link</th>
+            </tr>
+            <tr>
+                <td>Indore</td>
+                <td>CARE CHL Hospitals</td>
+                <td>Comprehensive Health Checkup</td>
+                <td>₹2,999</td>
+                <td><button onclick="bookAppointment('https://www.carehospitals.com/indore/health-package')">Book</button></td>
+            </tr>
+            <tr>
+                <td>Mumbai</td>
+                <td>Wockhardt Hospitals</td>
+                <td>Executive Package, Cardiac Checkup</td>
+                <td>₹3,120</td>
+                <td><button onclick="bookAppointment('https://www.wockhardthospitals.com/mumbai/health-package/')">Book</button></td>
+            </tr>
+            <tr>
+                <td>Pune</td>
+                <td>NM Medical</td>
+                <td>Full Body Checkup</td>
+                <td>₹2,500</td>
+                <td><button onclick="bookAppointment('https://www.nmmedical.com/index.php')">Book</button></td>
+            </tr>
+            <tr>
+                <td>Bhopal</td>
+                <td>Indus Health Plus</td>
+                <td>Preventive Health Checkup</td>
+                <td>₹2,199</td>
+                <td><button onclick="bookAppointment('https://www.indushealthplus.com/health-checkup-packages.html')">Book</button></td>
+            </tr>
+            <tr>
+                <td>Delhi</td>
+                <td>Dr Lal PathLabs</td>
+                <td>69-Test Full Body Checkup</td>
+                <td>₹1,999</td>
+                <td><button onclick="bookAppointment('https://www.lalpathlabs.com/swasth-fit-packages-full-body-checkups')">Book</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function bookAppointment(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinal Surgery & Treatment - Hospital Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        .hospital-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .hospital-card {
+            background: #f8f8f8;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .hospital-card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .treatment-name {
+            font-weight: bold;
+            color: #007bff;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .book-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .book-btn:hover {
+            background-color: #45a049;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Spinal Surgery & Treatment - Hospitals</h2>
+
+    <!-- Hospital Cards (Three per Row) -->
+    <div class="hospital-container">
+        <!-- Pune -->
+        <div class="row">
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Ruby Hall Clinic</h3>
+                <p>Pune</p>
+            </div>
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Jehangir Hospital</h3>
+                <p>Pune</p>
+            </div>
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Deenanath Mangeshkar Hospital</h3>
+                <p>Pune</p>
+            </div>
+        </div>
+
+        <!-- Indore -->
+        <div class="row">
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>CHL Hospital</h3>
+                <p>Indore</p>
+            </div>
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Apollo Rajshree Hospital</h3>
+                <p>Indore</p>
+            </div>
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Bombay Hospital</h3>
+                <p>Indore</p>
+            </div>
+        </div>
+
+        <!-- Mumbai -->
+        <div class="row">
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Lilavati Hospital</h3>
+                <p>Mumbai</p>
+            </div>
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Kokilaben Dhirubhai Ambani Hospital</h3>
+                <p>Mumbai</p>
+            </div>
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Nanavati Hospital</h3>
+                <p>Mumbai</p>
+            </div>
+        </div>
+
+        <!-- Bhopal -->
+        <div class="row">
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Bansal Hospital</h3>
+                <p>Bhopal</p>
+            </div>
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>Narmada Trauma Centre</h3>
+                <p>Bhopal</p>
+            </div>
+            <div class="hospital-card">
+                <p class="treatment-name">Spinal Surgery & Treatment</p>
+                <h3>LBS Hospital</h3>
+                <p>Bhopal</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Hospital Price Comparison</h2>
+    <table>
+        <tr>
+            <th>City</th>
+            <th>Hospital Name</th>
+            <th>Price (INR)</th>
+            <th>Book Now</th>
+        </tr>
+        <!-- Pune Hospitals -->
+        <tr>
+            <td>Pune</td>
+            <td>Ruby Hall Clinic</td>
+            <td>₹1,50,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>Pune</td>
+            <td>Jehangir Hospital</td>
+            <td>₹1,75,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>Pune</td>
+            <td>Deenanath Mangeshkar Hospital</td>
+            <td>₹1,60,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+
+        <!-- Indore Hospitals -->
+        <tr>
+            <td>Indore</td>
+            <td>CHL Hospital</td>
+            <td>₹1,40,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>Indore</td>
+            <td>Apollo Rajshree Hospital</td>
+            <td>₹1,65,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>Indore</td>
+            <td>Bombay Hospital</td>
+            <td>₹1,50,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+
+        <!-- Mumbai Hospitals -->
+        <tr>
+            <td>Mumbai</td>
+            <td>Lilavati Hospital</td>
+            <td>₹2,00,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>Mumbai</td>
+            <td>Kokilaben Dhirubhai Ambani Hospital</td>
+            <td>₹2,20,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>Mumbai</td>
+            <td>Nanavati Hospital</td>
+            <td>₹1,90,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+
+        <!-- Bhopal Hospitals -->
+        <tr>
+            <td>Bhopal</td>
+            <td>Bansal Hospital</td>
+            <td>₹1,20,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>Bhopal</td>
+            <td>Narmada Trauma Centre</td>
+            <td>₹1,30,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+        <tr>
+            <td>Bhopal</td>
+            <td>LBS Hospital</td>
+            <td>₹1,25,000</td>
+            <td><button class="book-btn">Book Now</button></td>
+        </tr>
+    </table>
+
+</body>
+</html>

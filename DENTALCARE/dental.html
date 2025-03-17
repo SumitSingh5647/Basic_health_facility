@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye-Care - Medcare</title>
+    <link rel="stylesheet" href="dental.css">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_eBcIOMDRFmD_ZRQ1Q0mMLTmLltrgWhUqQ&s" alt="User Profile" class="profile-pic" id="profileBtn">
+           <h1>Dental Care</h1>
+        </div>
+    <!-- Cancer Care Services -->
+    <div class="cancer-care-container">
+
+           <!-- Service 1: Teeth Cleaning -->
+           <div class="col-md-4">
+            <div class="card">
+                <img src="Teeth Cleaning.jpeg" class="card-img-top" alt="Teeth Cleaning">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Teeth Cleaning</i></h3>
+                    <p class="card-text">Professional teeth cleaning removes plaque and tartar to prevent cavities and gum diseases. Regular cleanings ensure a bright and healthy smile.</p>
+                    <a href="/TEETHPACKAGE/Teeth_Cleaning.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Teeth Whitening -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Teeth Whitening.jpeg" class="card-img-top" alt="Teeth Whitening">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Teeth Whitening</i></h3>
+                    <p class="card-text">Get a brighter smile with our safe and effective teeth whitening treatments. We offer in-office and take-home options for your convenience.</p>
+                    <a href="/TEETHPACKAGE/Teeth_Whitening.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: Braces & Orthodontics -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Braces & Orthodontics.jpeg" class="card-img-top" alt="Braces & Orthodontics">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Braces & Orthodontics</i></h3>
+                    <p class="card-text">Correct misaligned teeth and improve your bite with our advanced orthodontic treatments, including traditional braces and invisible aligners</p>
+                    <a href="/TEETHPACKAGE/Brace_Orthodontics.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 4: Dental Fillings -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Dental Fillings.jpeg" alt="Dental Fillings">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Dental Fillings</i></h3>
+                    <p class="card-text">Restore damaged or decayed teeth with durable and natural-looking dental fillings. Various material options available for long-lasting results.</p>
+                    <a href="/TEETHPACKAGE/Dental_Filling.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 5: Tooth Extractions -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Tooth Extractions.jpeg" class="card-img-top" alt="Tooth Extractions">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Tooth Extractions</i></h3>
+                    <p class="card-text">Safe and painless tooth extractions, including wisdom tooth removal, performed by experienced professionals for minimal discomfort</p>
+                    <a href="/TEETHPACKAGE/Tooth_Extraction.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 6: dentalimplants -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="dentalimplants.jpeg" class="card-img-top" alt="dentalimplants">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Dental Implants</i></h3>
+                    <p class="card-text">Replace missing teeth with high-quality dental implants that look and function like natural teeth. A long-term solution for restoring your smile</p>
+                    <a href="/TEETHPACKAGE/Dental_Implants.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Browse More Button -->
+        <button class="browse-more-btn">Browse for More</button>
+    </div>
+
+    <!-- User Dashboard Popup -->
+    <div id="userDashboard" class="dashboard-popup">
+        <div class="dashboard-content">
+            <span class="close-btn" onclick="closeDashboard()">&times;</span>
+            <h2>User Dashboard</h2><hr><br>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="index.html" class="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Service Details Popups -->
+    <div id="servicePopup" class="service-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup()">&times;</span>
+        </div>
+    </div>
+
+    <script src="dental.js"></script>
+</body>
+</html>

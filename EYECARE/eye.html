@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye-Care - Medcare</title>
+    <link rel="stylesheet" href="eye.css">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_eBcIOMDRFmD_ZRQ1Q0mMLTmLltrgWhUqQ&s" alt="User Profile" class="profile-pic" id="profileBtn">
+           <h1>Eye Care</h1>
+        </div>
+    <!-- Cancer Care Services -->
+    <div class="cancer-care-container">
+
+           <!-- Service 1: LASIK Surgery -->
+           <div class="col-md-4">
+            <div class="card">
+                <img src="lasikeyeimage.jpeg" class="card-img-top" alt="LASIK Surgery">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Lasik Surgery</i></h3>
+                    <p class="card-text">Laser vision correction for nearsightedness and farsightedness.</p>
+                    <a href="/EYEPACKAGE/Lasika_Therapy.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Cataract Surgery -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="cataractsurgey.jpeg" class="card-img-top" alt="Cataract Surgery">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Cataract Surgery</i></h3>
+                    <p class="card-text">Removal of the cloudy lens and replacement with an artificial one.</p>
+                    <a href="/EYEPACKAGE/Cataract.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: Glaucoma Treatment -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="gluacomatreatment.jpeg" class="card-img-top" alt="Glaucoma Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Glaucoma Treatment</i></h3>
+                    <p class="card-text">Lowering eye pressure to prevent vision loss.</p>
+                    <a href="/EYEPACKAGE/Glaucoma_Treatment.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 4: Retinal Detachment Surgery -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="retinalsurgery.jpeg" alt="Retinal Detachment Surgery">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Retinal Detachment Surgery</i></h3>
+                    <p class="card-text">Repairs a detached retina to restore vision.</p>
+                    <a href="/EYEPACKAGE/Retinal_Detachment.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 5: Corneal Transplant -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="cornealtransplant.jpeg" class="card-img-top" alt="Corneal Transplant">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Transplant</i></h3>
+                    <p class="card-text">Replaces a damaged cornea with a donor cornea.</p>
+                    <a href="/EYEPACKAGE/corneal_Transplant.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 6: Dry Eye Treatment -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="dryeyetreatment.jpeg" class="card-img-top" alt="Dry Eye Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Dry Eye Treatment</i></h3>
+                    <p class="card-text">Provides relief for chronic dry eyes.</p>
+                    <a href="/EYEPACKAGE/Dye_eye.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Browse More Button -->
+        <button class="browse-more-btn">Browse for More</button>
+    </div>
+
+    <!-- User Dashboard Popup -->
+    <div id="userDashboard" class="dashboard-popup">
+        <div class="dashboard-content">
+            <span class="close-btn" onclick="closeDashboard()">&times;</span>
+            <h2>User Dashboard</h2><hr><br>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="index.html" class="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Service Details Popups -->
+    <div id="servicePopup" class="service-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup()">&times;</span>
+        </div>
+    </div>
+
+    <script src="eye.js"></script>
+</body>
+</html>

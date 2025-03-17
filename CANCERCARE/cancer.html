@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer - Medcare</title>
+    <link rel="stylesheet" href="cancer.css">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_eBcIOMDRFmD_ZRQ1Q0mMLTmLltrgWhUqQ&s" alt="User Profile" class="profile-pic" id="profileBtn">
+           <h1>Cancer Care</h1>
+        </div>
+    <!-- Cancer Care Services -->
+    <div class="cancer-care-container">
+
+           <!-- Service 1: LASIK Surgery -->
+           <div class="col-md-4">
+            <div class="card">
+                <img src="Surgery.jpeg" class="card-img-top" alt="LASIK Surgery">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Surgery</i></h3>
+                    <p class="card-text">Removes cancerous tumors from the body. It is often used for solid tumors that have not spread.
+                    </p>
+                    <a href="/CANCERPACKAGE/Surgery.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Cataract Surgery -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Chemotherapy.jpeg" class="card-img-top" alt="Cataract Surgery">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Chemotherapy</i></h3>
+                    <p class="card-text">Uses powerful drugs to kill cancer cells or stop their growth. It can be used before or after surgery</p>
+                    <a href="/CANCERPACKAGE/Chemotherapy.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: Glaucoma Treatment -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Radiation Therapy.jpeg" class="card-img-top" alt="Glaucoma Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Radiation Therapy </i></h3>
+                    <p class="card-text">Uses high-energy radiation (X-rays or protons) to destroy cancer cells or shrink tumors.
+                    </p>
+                    <a href="/CANCERPACKAGE/Radiationtherapy.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 4: Retinal Detachment Surgery -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Immunotherapy.jpeg" alt="Retinal Detachment Surgery">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Immunotherapy </i></h3>
+                    <p class="card-text"> Boosts the body's immune system to fight cancer more effectively. Examples include checkpoint inhibitors and CAR-T cell therapy.
+                    </p>
+                    <a href="/CANCERPACKAGE/Immunotherapy.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 5: Corneal Transplant -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Targeted Therapy.jpeg" class="card-img-top" alt="Corneal Transplant">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Targeted Therapy</i></h3>
+                    <p class="card-text"> Uses drugs designed to target specific molecules involved in cancer growth, minimizing damage to healthy cells.
+                    </p>
+                    <a href="/CANCERPACKAGE/targetedtherapy.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 6: Dry Eye Treatment -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Hormone Therapy.webp" class="card-img-top" alt="Dry Eye Treatment">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Hormone Therapy </i></h3>
+                    <p class="card-text">Blocks or lowers hormones that fuel certain cancers (like breast or prostate cancer).</p>
+                    <a href="/CANCERPACKAGE/Hormonetherapy.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Browse More Button -->
+        <button class="browse-more-btn">Browse for More</button>
+    </div>
+
+    <!-- User Dashboard Popup -->
+    <div id="userDashboard" class="dashboard-popup">
+        <div class="dashboard-content">
+            <span class="close-btn" onclick="closeDashboard()">&times;</span>
+            <h2>User Dashboard</h2><hr><br>
+            <ul>
+                <li><a href="FRONTPAGE/front.HTML">Home</a></li>
+                <li><a href="index.html" class="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Service Details Popups -->
+    <div id="servicePopup" class="service-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup()">&times;</span>
+        </div>
+    </div>
+
+    <script src=""></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasik Surgery - Hospitals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .hospital-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #007bff;
+        }
+        .card p {
+            color: #555;
+        }
+        .price {
+            font-size: 18px;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lasik Surgery - Hospitals</h1>
+
+        <!-- Hospital Cards -->
+        <div class="hospital-grid">
+            <!-- Pune Hospitals -->
+            <div class="card">
+                <h2>Pune - Ruby Hall Clinic</h2>
+                <p>Advanced Lasik Surgery</p>
+                <p class="price">₹50,000</p>
+                <button onclick="bookAppointment('https://www.rubyhall.com/lasik-surgery')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - Deenanath Mangeshkar Hospital</h2>
+                <p>Laser Vision Correction</p>
+                <p class="price">₹55,000</p>
+                <button onclick="bookAppointment('https://www.dmhospital.org/lasik-surgery')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Pune - Sahyadri Hospital</h2>
+                <p>Custom Wavefront Lasik</p>
+                <p class="price">₹60,000</p>
+                <button onclick="bookAppointment('https://www.sahyadrihospital.com/lasik-surgery')">Book Now</button>
+            </div>
+
+            <!-- Indore Hospitals -->
+            <div class="card">
+                <h2>Indore - Bombay Hospital</h2>
+                <p>Advanced Lasik Treatment</p>
+                <p class="price">₹52,000</p>
+                <button onclick="bookAppointment('https://www.bombayhospitalindore.com/lasik-surgery')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - CHL Hospital</h2>
+                <p>PRK and Lasik Solutions</p>
+                <p class="price">₹58,000</p>
+                <button onclick="bookAppointment('https://www.chlhospitals.com/lasik-surgery')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Indore - Apollo Hospitals</h2>
+                <p>Custom Lasik Eye Surgery</p>
+                <p class="price">₹62,000</p>
+                <button onclick="bookAppointment('https://www.apollohospitals.com/indore/lasik-surgery')">Book Now</button>
+            </div>
+
+            <!-- Mumbai Hospitals -->
+            <div class="card">
+                <h2>Mumbai - Tata Memorial Hospital</h2>
+                <p>Refractive Surgery</p>
+                <p class="price">₹48,000</p>
+                <button onclick="bookAppointment('https://tmc.gov.in/lasik-surgery')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - Kokilaben Hospital</h2>
+                <p>Blade-Free Lasik</p>
+                <p class="price">₹63,000</p>
+                <button onclick="bookAppointment('https://www.kokilabenhospital.com/lasik-surgery')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Mumbai - Lilavati Hospital</h2>
+                <p>Contoura Vision Lasik</p>
+                <p class="price">₹65,000</p>
+                <button onclick="bookAppointment('https://www.lilavatihospital.com/lasik-surgery')">Book Now</button>
+            </div>
+
+            <!-- Bhopal Hospitals -->
+            <div class="card">
+                <h2>Bhopal - AIIMS Bhopal</h2>
+                <p>Affordable Lasik Treatment</p>
+                <p class="price">₹45,000</p>
+                <button onclick="bookAppointment('https://www.aiimsbhopal.edu.in/lasik-surgery')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - Bansal Hospital</h2>
+                <p>Advanced Vision Correction</p>
+                <p class="price">₹55,000</p>
+                <button onclick="bookAppointment('https://www.bansalhospital.com/lasik-surgery')">Book Now</button>
+            </div>
+            <div class="card">
+                <h2>Bhopal - Noble Hospital</h2>
+                <p>Refractive Surgery & Lasik</p>
+                <p class="price">₹58,000</p>
+                <button onclick="bookAppointment('https://www.noblebhopal.com/lasik-surgery')">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <h1>Price Comparison of Lasik Surgery in Different Cities</h1>
+        <table>
+            <tr>
+                <th>City</th>
+                <th>Hospital Name</th>
+                <th>Price</th>
+                <th>Booking</th>
+            </tr>
+            <tr><td>Pune</td><td>Ruby Hall Clinic</td><td>₹50,000</td><td><button onclick="bookAppointment('https://www.rubyhall.com/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Pune</td><td>Deenanath</td><td>₹55,000</td><td><button onclick="bookAppointment('https://www.rubyhall.com/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Pune</td><td>Sahyadri</td><td>₹60,000</td><td><button onclick="bookAppointment('https://www.rubyhall.com/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Indore</td><td>Bombay Hospital</td><td>₹52,000</td><td><button onclick="bookAppointment('https://www.bombayhospitalindore.com/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Indore</td><td>CHL Hospital</td><td>₹58,000</td><td><button onclick="bookAppointment('https://www.bombayhospitalindore.com/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Indore</td><td>Apollo Hospital</td><td>₹62,000</td><td><button onclick="bookAppointment('https://www.bombayhospitalindore.com/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Tata Memorial Hospital</td><td>₹48,000</td><td><button onclick="bookAppointment('https://tmc.gov.in/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Kokilaben Hospital</td><td>₹63,000</td><td><button onclick="bookAppointment('https://tmc.gov.in/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Lilavati Hospital</td><td>₹65,000</td><td><button onclick="bookAppointment('https://tmc.gov.in/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Bhopal</td><td>AIIMS Bhopal Hospital</td><td>₹45,000</td><td><button onclick="bookAppointment('https://tmc.gov.in/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Bansal Hospital</td><td>₹55,000</td><td><button onclick="bookAppointment('https://tmc.gov.in/lasik-surgery')">Book</button></td></tr>
+            <tr><td>Mumbai</td><td>Noble Hospital</td><td>₹58,000</td><td><button onclick="bookAppointment('https://tmc.gov.in/lasik-surgery')">Book</button></td></tr>
+                
+        </table>
+    </div>
+
+    <script>
+        function bookAppointment(url) { window.open(url, "_blank"); }
+    </script>
+
+</body>
+</html>

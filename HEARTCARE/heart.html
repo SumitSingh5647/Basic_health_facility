@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart-Care-Medcare</title>
+    <link rel="stylesheet" href="heart.css">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_eBcIOMDRFmD_ZRQ1Q0mMLTmLltrgWhUqQ&s" alt="User Profile" class="profile-pic" id="profileBtn">
+           <h1>Heath Care</h1>
+        </div>
+    <!-- Cancer Care Services -->
+    <div class="cancer-care-container">
+
+           <!-- Service 1: Angioplasty & Stent Placement -->
+           <div class="col-md-4">
+            <div class="card">
+                <img src="Angioplasty & Stent Placement.jpeg" class="card-img-top" alt="Angioplasty & Stent Placement">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Angioplasty & Stent Placement
+                    </i></h3>
+                    <p class="card-text">A minimally invasive procedure to open blocked heart arteries.
+                    Stents (small mesh tubes) are placed to keep arteries open and improve blood flow.
+                        </p>
+                    <a href="/HEARTPACKAGE/Angioplasty.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Coronary Artery Bypass Surgery (CABG) -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Coronary Artery Bypass Surgery (CABG).jpeg" class="card-img-top" alt="Coronary Artery Bypass Surgery (CABG)">
+                <div class="card-body">
+                    <h3 class="card-title"><i> Coronary Artery Bypass Surgery (CABG)
+                    </i></h3>
+                    <p class="card-text">Also known as bypass surgery, it redirects blood around blocked arteries.
+                    Improves blood flow to the heart and prevents heart attacks.
+                        </p>
+                        <a href="/HEARTPACKAGE/coronary.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: Heart Valve Repair & Replacement -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Heart Valve Repair & Replacement.jpeg" class="card-img-top" alt="Heart Valve Repair & Replacement">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Heart Valve Repair & Replacement
+                    </i></h3>
+                    <p class="card-text">Treats damaged heart valves caused by aging, infections, or congenital defects.
+                    Valve repair or artificial valve replacement restores heart function.
+                        </p>
+                        <a href="/HEARTPACKAGE/Heart_Valve.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 4: Pacemaker & ICD Implantation -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Pacemaker & ICD Implantation.jpeg" alt="Pacemaker & ICD Implantation">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Pacemaker & ICD Implantation
+                    </i></h3>
+                    <p class="card-text">Pacemaker: Regulates abnormal heartbeats (bradycardia or arrhythmia).
+                    Implantable Cardioverter Defibrillator (ICD): Prevents life-threatening heart rhythm disorders.
+                        </p>
+                        <a href="/HEARTPACKAGE/Pacemaker.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 5: Heart Failure Management -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Heart Failure Management.jpeg" class="card-img-top" alt="Heart Failure Management">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Heart Failure Management
+                    </i></h3>
+                    <p class="card-text">Medications, lifestyle changes, and advanced therapies for heart failure.
+                    Includes cardiac rehabilitation programs to improve heart function.
+                    </p>
+                    <a href="/HEARTPACKAGE/Heart_Failure.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 6: Hypertension & Preventive Cardiology -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Hypertension & Preventive Cardiology.jpeg" class="card-img-top" alt="Hypertension & Preventive Cardiology">
+                <div class="card-body">
+                    <h3 class="card-title"><i>Hypertension & Preventive Cardiology
+                    </i></h3>
+                    <p class="card-text">High blood pressure (hypertension) control through medication and lifestyle counseling.
+                    Preventive care for those at risk of heart disease, including cholesterol management.</p>
+                    <a href="/HEARTPACKAGE/Hypertension.html"><button class="btn btn-primary">Know More</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Browse More Button -->
+        <button class="browse-more-btn">Browse for More</button>
+    </div>
+
+    <!-- User Dashboard Popup -->
+    <div id="userDashboard" class="dashboard-popup">
+        <div class="dashboard-content">
+            <span class="close-btn" onclick="closeDashboard()">&times;</span>
+            <h2>User Dashboard</h2><hr><br>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="index.html" class="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Service Details Popups -->
+    <div id="servicePopup" class="service-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup()">&times;</span>
+        </div>
+    </div>
+
+    <script src="heart.js"></script>
+</body>
+</html>
